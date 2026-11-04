@@ -1,0 +1,53 @@
+{
+  "id": "payroll",
+  "kind": "lesson",
+  "module": 1,
+  "order": 5,
+  "free": true,
+  "title": "ხელფასი: Gross → Net",
+  "skills": [
+    "arithmetic"
+  ],
+  "theory": "Net = Gross × 0.98 × 0.8. {{fact:income-tax-rate}}",
+  "task": "C2 უჯრაში გამოთვალეთ Net ხელფასი.",
+  "hints": [
+    "ჯერ 2%, შემდეგ 20%.",
+    "× 0.98 და × 0.8.",
+    "`=B2*0.98*0.8`"
+  ],
+  "sheet": {
+    "cells": [
+      [
+        "სახელი",
+        "Gross",
+        "Net"
+      ],
+      [
+        "გიორგი",
+        2500,
+        null
+      ]
+    ],
+    "editable": [
+      "C2"
+    ]
+  },
+  "check": {
+    "cells": "C2",
+    "solution": "=B2*0.98*0.8",
+    "vary": [
+      "B2"
+    ],
+    "mustUse": []
+  },
+  "facts": [
+    "income-tax-rate",
+    "pension-employee-rate"
+  ],
+  "source": "ai-draft",
+  "verified": {
+    "checker": false,
+    "claudeAudit": null,
+    "founderPlayed": null
+  }
+}

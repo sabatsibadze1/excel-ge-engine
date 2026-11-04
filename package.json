@@ -1,0 +1,45 @@
+{
+  "name": "excel-ge-engine",
+  "version": "0.1.0",
+  "description": "Spreadsheet and grading engine of a Georgian-language Excel practice simulator: HyperFormula 3.5.0 wrapped in a Web Worker, swap-the-inputs grading, the English/Georgian formula-format converter and the lesson checker.",
+  "license": "GPL-3.0-only",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sabatsibadze1/excel-ge-engine.git"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "exports": {
+    ".": "./src/engine/index.ts",
+    "./pure": "./src/pure.ts",
+    "./checker": "./src/checker/check-lessons.ts",
+    "./host": "./src/worker/host.ts",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "scripts/build-worker.mjs",
+    "scripts/check-lessons.ts",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "build": "node scripts/build-worker.mjs dist/engine-worker.js",
+    "check-lessons": "tsx scripts/check-lessons.ts"
+  },
+  "dependencies": {
+    "esbuild": "0.28.2",
+    "hyperformula": "3.5.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3",
+    "vitest": "^5.0.5"
+  }
+}

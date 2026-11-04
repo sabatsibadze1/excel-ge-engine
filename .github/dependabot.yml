@@ -1,0 +1,13 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+    ignore:
+      # Pinned on purpose: engine settings were verified on HyperFormula 3.5.0 (build plan §6.2a).
+      - dependency-name: hyperformula
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly

@@ -1,0 +1,49 @@
+{
+  "id": "solution-errors",
+  "kind": "lesson",
+  "module": 1,
+  "order": 6,
+  "free": true,
+  "title": "the solution divides by an empty cell",
+  "skills": [
+    "arithmetic"
+  ],
+  "theory": "Average price = total / count, but the count cell is empty.",
+  "task": "C2 უჯრაში გამოთვალეთ საშუალო ფასი.",
+  "hints": [
+    "=A2/B2",
+    "მეორე",
+    "მესამე"
+  ],
+  "sheet": {
+    "cells": [
+      [
+        "თანხა",
+        "რაოდენობა",
+        "საშუალო"
+      ],
+      [
+        1200,
+        null,
+        null
+      ]
+    ],
+    "editable": [
+      "C2"
+    ]
+  },
+  "check": {
+    "cells": "C2",
+    "solution": "=A2/B2",
+    "vary": [
+      "A2"
+    ]
+  },
+  "facts": [],
+  "source": "ai-draft",
+  "verified": {
+    "checker": false,
+    "claudeAudit": null,
+    "founderPlayed": null
+  }
+}

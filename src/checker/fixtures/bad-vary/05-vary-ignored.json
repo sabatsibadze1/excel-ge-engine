@@ -1,0 +1,51 @@
+{
+  "id": "vary-ignored",
+  "kind": "lesson",
+  "module": 1,
+  "order": 5,
+  "free": true,
+  "title": "vary does not affect the answer",
+  "skills": [
+    "arithmetic"
+  ],
+  "theory": "The answer depends on B2, but only D2 is varied.",
+  "task": "C2 უჯრაში გამოთვალეთ Net ხელფასი.",
+  "hints": [
+    "=B2*0.784",
+    "მეორე",
+    "მესამე"
+  ],
+  "sheet": {
+    "cells": [
+      [
+        "სახელი",
+        "Gross",
+        "Net",
+        "Bonus"
+      ],
+      [
+        "გიორგი",
+        2500,
+        null,
+        150
+      ]
+    ],
+    "editable": [
+      "C2"
+    ]
+  },
+  "check": {
+    "cells": "C2",
+    "solution": "=B2*0.784",
+    "vary": [
+      "D2"
+    ]
+  },
+  "facts": [],
+  "source": "ai-draft",
+  "verified": {
+    "checker": false,
+    "claudeAudit": null,
+    "founderPlayed": null
+  }
+}

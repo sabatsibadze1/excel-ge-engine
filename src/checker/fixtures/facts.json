@@ -1,0 +1,18 @@
+[
+  {
+    "id": "income-tax-rate",
+    "text_ka": "საშემოსავლო გადასახადის განაკვეთი — 20%.",
+    "value": 0.2,
+    "source": "https://matsne.gov.ge/ka/document/view/1043717",
+    "checked": "2026-10-01",
+    "checkedBy": "ai-web"
+  },
+  {
+    "id": "pension-employee-rate",
+    "text_ka": "დასაქმებულის საპენსიო შენატანი — დარიცხული ხელფასის 2%.",
+    "value": 0.02,
+    "source": "https://matsne.gov.ge/ka/document/view/4280127",
+    "checked": "2026-10-01",
+    "checkedBy": "founder"
+  }
+]
