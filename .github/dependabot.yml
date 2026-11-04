@@ -7,6 +7,9 @@ updates:
     ignore:
       # Pinned on purpose: engine settings were verified on HyperFormula 3.5.0 (build plan §6.2a).
       - dependency-name: hyperformula
+      # Major upgrades (e.g. TypeScript 7, Node types 26) are done on purpose, not automatically.
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
   - package-ecosystem: github-actions
     directory: /
     schedule:
